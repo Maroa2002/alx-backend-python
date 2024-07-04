@@ -8,6 +8,6 @@ def floor(n: float) -> int:
     """
         args:
             n: float
-        return: float
+        return: int
     """
     return math.floor(n)
