@@ -7,8 +7,10 @@ import random
 
 async def wait_random(max_delay: int = 10) -> float:
     """
-        :param max_delay: int
-        :return: float
+    Waits for a random delay
+
+    :param max_delay: max delay for calling wait_random
+    :return: the delay value(float)
     """
     # generate a random delay between 0 and max_delay(inclusive)
     random_delay = random.uniform(0, max_delay)
