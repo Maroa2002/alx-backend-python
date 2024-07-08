@@ -13,7 +13,10 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     :return: list of all the delays(float values)
     """
     delay_list = []
+    # spawn wait_random n times with the max_delay
     for counter in range(0, n):
+        # await the wait_random coroutine and store value
         float_value = await wait_random(max_delay)
         delay_list.append(float_value)
+    # return the list of all the delays(float values)
     return delay_list
